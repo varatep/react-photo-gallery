@@ -128,6 +128,7 @@ class Gallery extends React.Component{
 		<div id="Gallery" className="clearfix" ref={(c) => this._gallery = c}>
 		    {photoPreviewNodes}
 		    <Lightbox
+      annotoriousIdentifier={this.props.annotoriousIdentifier}
 			currentImage={this.state.currentImage}
 			images={lightboxImages}
 			isOpen={this.state.lightboxIsOpen}
@@ -167,7 +168,8 @@ Gallery.defaultProps = {
     lightboxShowImageCount: false,
     backdropClosesModal: true,
     disableLightbox: false,
-    preloadNextImage: true
+    preloadNextImage: true,
+    annotoriousIdentifier: 'annotorious-'
 }
 // Gallery image style
 const style = {
