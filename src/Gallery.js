@@ -128,6 +128,7 @@ class Gallery extends React.Component{
 		<div id="Gallery" className="clearfix" ref={(c) => this._gallery = c}>
 		    {photoPreviewNodes}
 		    <Lightbox
+      customControls={this.props.customControls}
       annotoriousIdentifier={this.props.annotoriousIdentifier}
 			currentImage={this.state.currentImage}
 			images={lightboxImages}

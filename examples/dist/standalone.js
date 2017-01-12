@@ -184,6 +184,7 @@ var Gallery = (function (_React$Component) {
                         } },
                     photoPreviewNodes,
                     _react2['default'].createElement(_reactImages2['default'], {
+                        customControls: this.props.customControls,
                         annotoriousIdentifier: this.props.annotoriousIdentifier,
                         currentImage: this.state.currentImage,
                         images: lightboxImages,
