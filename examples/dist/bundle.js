@@ -227,7 +227,7 @@ Gallery.defaultProps = {
     backdropClosesModal: true,
     disableLightbox: false,
     preloadNextImage: true,
-    annotoriousIdentifier: 'annotorious-'
+    annotoriousIdentifier: 'annotorious'
 };
 // Gallery image style
 var style = {
