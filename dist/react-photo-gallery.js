@@ -73,6 +73,7 @@ var Gallery = (function (_React$Component) {
                 currentImage: index,
                 lightboxIsOpen: true
             });
+            this.props.openHandler(index);
         }
     }, {
         key: 'closeLightbox',
