@@ -35,6 +35,7 @@ class Gallery extends React.Component{
 	    currentImage: index,
             lightboxIsOpen: true
         });
+        this.props.openHandler(index);
     }
     closeLightbox(){
         this.setState({
